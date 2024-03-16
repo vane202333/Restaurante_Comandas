@@ -1,0 +1,124 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+}
+body{
+    width: 100%;
+}
+
+/*corresponde al splash-screen*/
+.splash {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 78vh;
+    margin: auto;
+    padding-top: 13%;
+    background-image: linear-gradient(164deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%), linear-gradient(to bottom, red, yellow);
+    text-align: center;
+}
+
+.splash section{
+    margin-bottom: 4px;
+}
+
+.loge{
+    width: 15%;
+}
+.splash h1{
+    display: inline;
+    margin: auto;
+    width: 20%;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.splash h3{
+    display: inline;
+    width: 20%;
+    margin: auto;
+    color: rgb(81, 82, 82);
+}
+
+.splash section button{
+    background-color: orange;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    border: none;
+}
+
+.splash section button:hover{
+   background-color:#e7820d;
+}
+
+/*Corresponde al loggin or registry screen*/
+
+
+.logging{
+    background-color:azure;
+    flex-direction: column;
+    width: 95%;
+    height: 95vh;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+
+
+.logging-header{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    font-size: 2rem;
+    margin: 10px auto;
+    background-color: orange;
+    justify-content: flex-start;
+}
+
+.logging svg{
+    margin: 1em auto 0em auto;
+    width: 100%;
+}
+
+.logging-header a{
+    width: 50px;
+}
+
+#loggingorregistry{
+    margin: 1em auto 1em  ;
+}
+
+.logging h2{
+    margin: 60px auto;
+    font-size: 1rem;
+    background-color: orange;
+    width: 45%;
+    padding: 10px;
+
+}
+
+.logging-buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.logging-buttons button{
+    background-color: orange;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    border: none;
+    width: 50%;
+}
+
+.logging-buttons button:hover{
+   background-color:#e7820d;
+}
+
+
+
+
