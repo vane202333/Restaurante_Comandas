@@ -1,9 +1,18 @@
+/* Se corrige el tamño de Bienvenidos en splashscreen a medida relativas,
+ el margen del logo en splash screen y el color de fondo se corrige,
+ Se corrige el color de fondo del sito, de blanco a negro,
+ se corrige el menu de redireccionamiento de logging o registro, los colores, la interactividad con los botones
+ Se corrigen varias medidas relativas para que se ajuste mejor a diferentes pantallas y orientaciones
+ Se termina página de inicio de sesión
+ */
+
 *{
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 20px;
 }
 body{
     width: 100%;
+    background-color: #000;
 }
 
 /*corresponde al splash-screen*/
@@ -11,12 +20,16 @@ body{
     display: flex;
     flex-direction: column;
     width: 95%;
-    height: 78vh;
-    margin: auto;
-    padding-top: 13%;
+    height: 68vh;
+    margin: 0 auto;
+    padding-top: 23%;
     background-image: linear-gradient(164deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%), linear-gradient(to bottom, red, yellow);
     text-align: center;
 }
+
+/*
+
+*/
 
 .splash section{
     margin-bottom: 4px;
@@ -24,12 +37,16 @@ body{
 
 .loge{
     width: 15%;
+    background-color: #fff;
+    border-radius: 20rem;
+    padding: 3px;
+
 }
 .splash h1{
     display: inline;
     margin: auto;
     width: 20%;
-    font-size: 50px;
+    font-size: 2rem;
     font-weight: 900;
 }
 
@@ -41,7 +58,7 @@ body{
 }
 
 .splash section button{
-    background-color: orange;
+    background-color: rgb(218, 112, 14);
     color: #fff;
     padding: 10px;
     font-size: 20px;
@@ -50,18 +67,18 @@ body{
 }
 
 .splash section button:hover{
-   background-color:#e7820d;
+   background-color: rgb(218, 112, 14);
 }
 
 /*Corresponde al loggin or registry screen*/
 
 
 .logging{
-    background-color:azure;
+    background-color: #fff;
     flex-direction: column;
-    width: 95%;
-    height: 95vh;
-    margin: auto;
+    width: 95vw;
+    height: calc(95vh + 10px);
+    margin: 0 auto;
     text-align: center;
     color: #fff;
 }
@@ -73,7 +90,7 @@ body{
     flex-direction: row;
     font-size: 2rem;
     margin: 10px auto;
-    background-color: orange;
+    background-color:rgb(218, 112, 14);
     justify-content: flex-start;
 }
 
@@ -90,10 +107,10 @@ body{
     margin: 1em auto 1em  ;
 }
 
-.logging h2{
+.logging h3{
     margin: 60px auto;
     font-size: 1rem;
-    background-color: orange;
+    background-color:rgb(218, 112, 14);
     width: 45%;
     padding: 10px;
 
@@ -102,23 +119,76 @@ body{
 .logging-buttons{
     display: flex;
     flex-direction: column;
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 
 .logging-buttons button{
-    background-color: orange;
+    background-color: rgb(218, 112, 14);
     color: #fff;
     padding: 10px;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 3vh;
     border: none;
     width: 50%;
 }
 
 .logging-buttons button:hover{
    background-color:#e7820d;
+   width: 80%;
+   font-size: 2em;
+}
+
+/* Sección de inicio de sesion */
+
+.sing-in{
+    color: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 1vh;   
 }
 
 
+.sing-in h1{
+    font-size: 2em;
+    margin-bottom: -.08em;
+    margin-top: 15vh;
+}
 
+input[type="email"],input[type="password"]{
+    border: none;
+    background-color: #e7f6fa;
+    margin-top: .5em;
+    width: 70%;
+    height: 3em;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 750;
+}
 
+input[type="email"]:hover,input[type="password"]:hover{
+    background-color:  #d5f2fc;
+}
+
+input[type="submit"]{
+    margin-top: 2%;
+    border: none;
+    background-color: #4f11df;
+    color: #fff;
+    margin-top: .5em;
+    width: 70%;
+    height: 3em;
+    border-radius: 10px;
+    font-weight: 750;
+    font-size: 1em;
+}
+
+input[type="submit"]:hover{
+    background-color: #622cdf ;
+}
+
+img[alt="flat-building"]{
+    margin-top: 1vh;
+    width: 35vw;
+    height: 63vh;
+}
