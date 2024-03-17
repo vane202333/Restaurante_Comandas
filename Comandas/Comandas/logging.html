@@ -1,3 +1,4 @@
+<!--Logging terminado -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,16 +9,45 @@
 </head>
 <body>
     <main>
-        <article class="Logging">
-            <!--Encabezado-->
-            <section >
-                <h1>
+        <article  class="logging">
+           <!--Encabezado-->
+           <section class="logging-header ">
+                <a href="loggin-registry.html"><svg viewBox="0 0 24 24" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path d="M21 11H5.41l5.3-5.29a1 1 0 1 0-1.42-1.42l-7 7a1 1 0 0 0 0 1.42l7 7a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42L5.41 13H21a1 1 0 0 0 0-2" style="fill:#fff"/></svg>
+                    </a>
+                <h1 id="loggingorregistry">
                     Iniciar sesión
-                </h1>
+                    </h1>
             </section>
+        
+            <!--Presentación y formulario de ingreso-->
+            <div class="sing-in ">
+                <form>
+                    <section>
+                        <h1>Cuenta de ingreso</h1>
+                    </section>
 
-           
+                    <section>
+                        <label for="email"></label>
+                        <input type="email" id="email" placeholder="Correo" required>
+                    </section>
+
+                    <section>
+                        <label for="password"></label>
+                        <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="La contraseña debe contener al menos un número, una letra minúscula, una letra mayúscula y tener al menos 8 caracteres de longitud" required placeholder="Contraseña">
+                    </section>
+
+                    <section>
+                        <input type="submit" value="Ingresar">
+                    </section>
+                </form>
+
+                <section>
+                    <img src="https://live.staticflickr.com/2512/4167445294_48bca1cd28_w.jpg" alt="flat-building">
+                </section>
+            </div>
         </article>
+           
+        
     </main>
 </body>
 </html>
