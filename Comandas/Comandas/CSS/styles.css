@@ -1,10 +1,8 @@
-/* Se corrige el tamño de Bienvenidos en splashscreen a medida relativas,
- el margen del logo en splash screen y el color de fondo se corrige,
- Se corrige el color de fondo del sito, de blanco a negro,
- se corrige el menu de redireccionamiento de logging o registro, los colores, la interactividad con los botones
- Se corrigen varias medidas relativas para que se ajuste mejor a diferentes pantallas y orientaciones
- Se termina página de inicio de sesión
- */
+/* Se corrige la sección logging-registry, sobre el aumento de tamaño
+al pasar el cursos sobre el alemento
+<!--Se transcribe el archivo que me envio Vane a Css3 y html 5, con mi propio estilo-->
+Se implementa la página de registro de usuarios, quedando pendientes los svg de cada casilla
+*/
 
 *{
     font-family: Arial, Helvetica, sans-serif;
@@ -134,8 +132,6 @@ body{
 
 .logging-buttons button:hover{
    background-color:#e7820d;
-   width: 80%;
-   font-size: 2em;
 }
 
 /* Sección de inicio de sesion */
@@ -155,9 +151,9 @@ body{
     margin-top: 15vh;
 }
 
-input[type="email"],input[type="password"]{
+input{
     border: none;
-    background-color: #e7f6fa;
+    background-color: #efefef;
     margin-top: .5em;
     width: 70%;
     height: 3em;
@@ -166,11 +162,11 @@ input[type="email"],input[type="password"]{
     font-weight: 750;
 }
 
-input[type="email"]:hover,input[type="password"]:hover{
+input:hover{
     background-color:  #d5f2fc;
 }
 
-input[type="submit"]{
+input[type="submit"],button[type="submit"]{
     margin-top: 2%;
     border: none;
     background-color: #4f11df;
@@ -191,4 +187,79 @@ img[alt="flat-building"]{
     margin-top: 1vh;
     width: 35vw;
     height: 63vh;
+}
+
+
+/* Inicio de los estilos del registro de usuarios */
+.registry{
+    color: #807d7d;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding-bottom: 10%;
+    padding-top: 5%;
+}
+input[type="date"]::before {
+    content: attr(placeholder);
+    color: #999;
+}
+
+.responsive-registry{
+    background-color: #ffffff;
+    flex-direction: column;
+    width: 95vw;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.logging-header svg{
+    margin: 1em auto 0em auto;
+    width: 100%;
+}
+
+.noinput{
+    border: none;
+    background-color: #efefef;
+    margin-top: .5em;
+    width: 70%;
+    height: 3em;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 750;
+    color: #807d7d;
+}
+
+.responsive-registry main{
+    display: flex;
+    flex-direction: column;
+}
+
+.divphoneregistry{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: stretch;
+    padding-left: 0em;
+    margin: 0 auto;
+}
+
+
+.divphoneregistry section:nth-child(1){
+    display: flex;
+    width: 40%;
+}
+
+.divphoneregistry #lada{
+    width: 90%;
+}
+
+.divphoneregistry section:nth-child(2){
+    display: flex;
+    width: 90%;
+}
+
+.divphoneregistry input[type="text"]{
+    width: 100%;
 }
