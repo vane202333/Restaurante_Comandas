@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>RestauranteComandas</title>
+</head>
+<body >
+    <div  class="responsive-registry">
+        <header >
+            <article>
+                <!--Encabezado-->
+                <section class="logging-header">
+                    <a href="splash.html"><svg viewBox="0 0 24 24" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path d="M21 11H5.41l5.3-5.29a1 1 0 1 0-1.42-1.42l-7 7a1 1 0 0 0 0 1.42l7 7a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42L5.41 13H21a1 1 0 0 0 0-2" style="fill:#fff"/></svg>
+                    </a>
+                    <h1 id="loggingorregistry">
+                        Registro de usuario
+                    </h1>
+                </section>
+            </article>
+        </header>
+
+        <main>
+            <!--Se transcribe el archivo que me envio Vane a Css3 y html 5, con mi propio estilo-->
+            <article>
+            <form class="registry" action="UserRegister.php" method="post">
+                <section>
+                    <label for="nombres"></label>
+                    <input type="text" id="nombres" name="nombres" required placeholder="Su nombre">
+                </section>
+
+                <section>
+                    <label for="ApellidoP"></label>
+                    <input type="text" id="ApellidoP" name="ApellidoP" required placeholder="Apellido Paterno">
+                </section>
+
+                <section>
+                    <label for="ApellidoM"></label>
+                    <input type="text" id="ApellidoM" name="ApellidoM" required placeholder="Apellido Materno">
+                </section>
+
+                <section>
+                    <label for="CorreoElectronico"></label>
+                    <input type="email" id="CorreoElectronico" name="CorreoElectronico" required placeholder="Correo Electrónico">
+                </section>
+
+                <div class="divphoneregistry">
+                    <section>
+                        <label for="lada"></label>
+                        <select id="lada" name="lada" class="noinput">
+                            <option value="">Lada</option>
+                            <option value="1">1 - Estados Unidos</option>
+                            <option value="52">52 - México</option>
+                            <option value="44">44 - Reino Unido</option>
+                            <option value="81">81 - Japón</option>
+                            <option value="86">86 - China</option>
+                            <option value="33">33 - Francia</option>
+                            <option value="49">49 - Alemania</option>
+                            <option value="34">34 - España</option>
+                            <option value="61">61 - Australia</option>
+                            <option value="91">91 - India</option>
+                            <option value="7">7 - Rusia</option>
+                        </select>
+                    </section>
+
+                    <section>
+                        <label for="TelefonoCel"></label>
+                        <input type="text" id="TelefonoCel" name="TelefonoCel" required placeholder="Celular">
+                    </section>
+                </div>
+
+                <section>
+                    <label for="FechaNacimiento"></label>
+                    <input type="date" id="FechaNacimiento" name="FechaNacimiento" required placeholder="Fecha de Nacimiento">
+                </section>
+
+                <section>
+                    <label for="Genero"></label>
+                        <select id="Genero" name="Genero" class="noinput">
+                            <option value="choose-genere">Seleccionar Género</option>
+                            <option value="Mujer">Mujer</option>
+                            <option value="Hombre">Hombre</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                </section>
+
+                <section>
+                    <label for="Contrasena"></label>
+                        <input type="password" id="Contrasena" name="Contrasena" required placeholder="Contraseña">
+                </section>
+
+                <section>
+                    <label for="ValidarContrasena"></label>
+                    <input type="password" id="ValidarContrasena" name="ValidarContrasena" required placeholder="Confirmar contraseña">
+                </section>
+
+                <section>
+                    <label for="Perfil"></label>
+                        <select id="Perfil" name="Perfil" class="noinput">
+                            <option value="select-perfil">Seleccionar perfil</option>
+                            <option value="1">Administrador</option>
+                            <option value="2">Empleado</option>
+                            <option value="3">Cliente</option>
+                        </select>
+                </section>
+
+                <section>
+                    <button type="submit">Guardar</button>
+                </section>
+
+            </form>
+            </article>
+        </main>
+    </div>
+</body>
+</html>
