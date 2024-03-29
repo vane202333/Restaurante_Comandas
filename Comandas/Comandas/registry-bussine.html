@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>RestauranteComandas</title>
+    <!--Se añade una pequeña funcion en java script que mantiene el botón presionado-->
+    <script>
+        function togglePressed() {
+        var boton = document.getElementById("miBoton");
+        boton.classList.toggle("pressed");
+        }
+
+        function toggle2Pressed() {
+        var boton = document.getElementById("mi2Boton");
+        boton.classList.toggle("pressed");
+        }
+    </script>
+</head>
+<body >
+    <div  class="responsive-registry">
+        <header >
+            <article>
+                <!--Encabezado-->
+                <section class="logging-header">
+                    <a href="logging.html"><svg viewBox="0 0 24 24" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path d="M21 11H5.41l5.3-5.29a1 1 0 1 0-1.42-1.42l-7 7a1 1 0 0 0 0 1.42l7 7a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42L5.41 13H21a1 1 0 0 0 0-2" style="fill:#fff"/></svg>
+                    </a>
+                    <h1 id="loggingorregistry">
+                        Alta negocio
+                    </h1>
+                </section>
+            </article>
+        </header>
+
+        <main>
+            <!--Se transcribe el archivo que me envio Vane a Css3 y html 5, con mi propio estilo-->
+            <article>
+            <form class="registry" action="UserRegister.php" method="post">
+                <section class="upload-logo">
+                    <h3>Sube tu logo:</h3>
+                </section>
+                <section>
+                    <label for="file-upload"></label>
+                    <input type="file" id="file-upload" name="file-upload" required placeholder="Logo" accept="image/png, image/jpeg">
+                </section>
+
+                <section>
+                    <label for="socie"></label>
+                    <input type="text" id="socie" name="socie" required placeholder="Nombre asociado" maxlength="50" pattern="[A-Za-z]+">
+                </section>
+
+                <section>
+                    <label for="namebussine"></label>
+                    <input type="text" id="namebussine" name="namebussine" required placeholder="Nombre de negocio" maxlength="40" pattern="[A-Za-z0-9]+">
+                </section>
+
+                <section>
+                    <label for="RFC"></label>
+                    <input type="text" id="RFC" name="RFC" required placeholder="RFC" maxlength="60" pattern="[A-Za-z0-9]+">
+                </section>
+
+                <section>
+                    <label for="society-type"></label>
+                    <input type="text" id="society-type" name="society-type" required placeholder="Tipo de Sociedad">
+                </section>
+
+                <section>
+                    <label for="social-reazon"></label>
+                    <input type="text" id="social-reazon" name="social-reazon" required placeholder="Razón social">
+                </section>
+
+                <section>
+                    <label for="ApellidoM"></label>
+                    <input type="text" id="ApellidoM" name="ApellidoM" required placeholder="Domicilio fiscal" maxlength="100" pattern="[A-Za-z0-9]+">
+                </section>
+
+                <section>
+                    <label for="CorreoElectronico"></label>
+                    <input type="email" id="CorreoElectronico" name="CorreoElectronico" required placeholder="Correo Electrónico" maxlength="60" pattern="[A-Za-z0-9]+">
+                </section>
+                
+                <section>
+                    <label for="cellphone"></label>
+                    <input type="text" id="cellphone" name="cellphone" required placeholder="Telefono Celular" maxlength="10" pattern="[0-9]+">
+                </section>
+
+                <div class="divphoneregistry ladamax">
+                    <section >
+                        <label for="typebussine"></label>
+                        <select id="lada" name="typebussine" class=" typebussine noinput ladamax" required>
+                            <option value="">Tipo de establecimiento</option>
+                            <option value="1">Restaurante de Comida Mexicana</option>
+                            <option value="2">Pizzería</option>
+                            <option value="3">Cafetería</option>
+                            <option value="4">Food Truck</option>
+                            <option value="5">Restaurante de Comida Italiana</option>
+                            <option value="6">Hamburguesería</option>
+                            <option value="7">Sushi Bar</option>
+                            <option value="8">Restaurante de Comida China</option>
+                            <option value="9">Taquería</option>
+                            <option value="10">Panadería</option>
+                            <option value="11">Bar de Tapas</option>
+                            <option value="12">Restaurante de Comida India</option>
+                            <option value="13">Restaurante de Comida Tailandesa</option>
+                            <option value="14">Restaurante de Comida Vegetariana</option>
+                            <option value="15">Restaurante de Comida Vegana</option>
+                        </select>
+                    </section>
+                </div>
+
+                <section>
+                    <label for="website"></label>
+                    <input type="text" id="website" name="website" required placeholder="Sito Web" maxlength="150" pattern="[A-Za-z0-9]+">
+                </section>
+
+                <section class="branches" aria-required="true">
+                    <h3>
+                        ¿Cuentas con más sucursales?
+                    </h3>
+                    <button id="miBoton" onclick="togglePressed()">
+                        <p>
+                            Sí
+                        </p>
+                    </button>
+
+                    <button id="mi2Boton" onclick="toggle2Pressed()">
+                        <p>
+                            No
+                        </p>
+                    </button>
+                </section>
+            
+                <section class="saveregistry">
+                    <button type="submit">Guardar Registro</button>
+                </section>
+
+            </form>
+            </article>
+        </main>
+    </div>
+</body>
+</html>
