@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>RestauranteComandas</title>
+    <!--Se añade una pequeña funcion en java script que mantiene el botón presionado-->
+    <script>
+        function togglePressed() {
+        var boton = document.getElementById("miBoton");
+        boton.classList.toggle("pressed");
+        }
+
+        function toggle2Pressed() {
+        var boton = document.getElementById("mi2Boton");
+        boton.classList.toggle("pressed");
+        }
+    </script>
+</head>
+<body >
+    <div  class="responsive-registry">
+        <header >
+            <article>
+                <!--Encabezado-->
+                <section class="logging-header">
+                    <a href="registry-bussine.html"><svg viewBox="0 0 24 24" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path d="M21 11H5.41l5.3-5.29a1 1 0 1 0-1.42-1.42l-7 7a1 1 0 0 0 0 1.42l7 7a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42L5.41 13H21a1 1 0 0 0 0-2" style="fill:#fff"/></svg>
+                    </a>
+                    <h1 id="loggingorregistry">
+                        Alta Sucursal
+                    </h1>
+                </section>
+            </article>
+        </header>
+
+        <main>
+            <!--Se transcribe el archivo que me envio Vane a Css3 y html 5, con mi propio estilo-->
+            <article>
+            <form class="registry" action="SucursalRegister.php" method="post">
+                
+                <section>
+                    <label for="sucursal"></label>
+                    <input type="text" id="sucursal" name="sucursal" required placeholder="Nombre Sucursal" maxlength="50" pattern="[A-Za-z]+">
+                </section>
+
+                <section>
+                    <label for="addresssucursal"></label>
+                    <input type="text" id="addresssucursal" name="addresssucursal" required placeholder="Domicilio Sucursal" maxlength="40" pattern="[A-Za-z0-9]+">
+                </section>
+
+                <section>
+                    <label for="RFC"></label>
+                    <input type="text" id="RFC" name="RFC" required placeholder="Ciudad" maxlength="60" pattern="[A-Za-z0-9]+">
+                </section>
+
+                <section>
+                    <label for="society-type"></label>
+                    <input type="text" id="society-type" name="society-type" required placeholder="Estado">
+                </section>
+
+                <section>
+                    <label for="social-reazon"></label>
+                    <input type="text" id="social-reazon" name="social-reazon" required placeholder="Código postal" maxlength="10" pattern="[0-9]+">
+                </section>
+
+                
+                <section>
+                    <label for="cellphone"></label>
+                    <input type="text" id="cellphone" name="cellphone" required placeholder="Telefono Celular" maxlength="10" pattern="[0-9]+">
+                </section>
+
+                
+
+                <section>
+                    <label for="website"></label>
+                    <input type="text" id="website" name="website" required placeholder="Sito Web" maxlength="150" pattern="[A-Za-z0-9]+">
+                </section>
+
+            
+                <section class="saveregistry">
+                    <button type="submit">Guardar Registro</button>
+                </section>
+
+            </form>
+            </article>
+        </main>
+    </div>
+</body>
+</html>
