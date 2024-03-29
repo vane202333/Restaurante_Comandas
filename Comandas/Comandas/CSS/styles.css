@@ -1,5 +1,5 @@
 /* 
-Se corrige la interactividad del boton guardar en registro de nuevos usuarios
+Se añaden nuevas secciones sobre las nuevas paginas, se hace uso del poliformismo para las nuevas páginas
 */
 
 *{
@@ -261,3 +261,80 @@ input[type="date"]::before {
 .divphoneregistry input[type="text"]{
     width: 100%;
 }
+
+
+/* seccion de seleccion entre clientes o negocios */
+.noisbutton{
+    display: flex;
+    color:#000
+}
+
+.noisbutton h3{
+    margin:  5px auto 5px auto;
+    background-color: #fff;
+}
+
+.typeperfil{
+    margin-top: 10%;
+}
+
+/* Seccion sobre alta de negocio */
+
+.upload-logo{
+    color: #000;
+    margin: 1px auto ;
+}
+
+.ladamax{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: left;
+    padding-right: 4%;
+}
+
+.ladamax section:nth-child(1){
+    width: 53%;
+    justify-content: left;
+}
+
+
+.typebussine:hover{
+    
+    background-color: #d5f2fc;
+}
+
+.branches{
+    color: #000;
+}
+
+.branches button{
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    border: solid black;
+    margin: 0 1%;
+    width: 7%;
+}
+
+.branches button:hover{
+    background-color: #d5f2fc;
+    border: solid #49c7f1;
+}
+#miBoton.pressed {
+    background-color: #d5f2fc; /* Cambia el color de fondo cuando el botón está presionado */
+    border: solid #49c7f1;
+  }
+
+  #mi2Boton.pressed {
+    background-color: #d5f2fc; /* Cambia el color de fondo cuando el botón está presionado */
+    border: solid #49c7f1;
+  }
+  
+  .saveregistry button{
+    background-color: #e7820d;
+  }
+
+  .saveregistry button:hover{
+    background-color: #f7a548;
+  }
